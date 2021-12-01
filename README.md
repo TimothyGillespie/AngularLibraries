@@ -4,7 +4,7 @@ This repository contains Angular2 libraries which are hosted under the @tgillesp
 
 ## Overview
 
-### @tgillespie/ngx-youtube-player
+### [@tgillespie/ngx-youtube-player](libs/youtube-player)
 A component for embedding the YouTube Player and controlling it via the [YouTube iFrame API](https://developers.google.com/youtube/iframe_api_reference).
 
 It makes the iFrame API and player instance available via services and the component attribute. Alternatively, the API and Player instances can be managed with custom services.
