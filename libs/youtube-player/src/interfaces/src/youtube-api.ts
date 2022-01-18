@@ -178,4 +178,14 @@ export type YouTubePlayerQualitySetting =
 
 export type YouTubeNumericPlayerState = -1 | 0 | 1 | 2 | 3 | 5;
 
+export const YouTubePlayerState = {
+  UNSTARTED: -1,
+  ENDED: 0,
+  PLAYING: 1,
+  PAUSED: 2,
+  BUFFERING: 3,
+  VIDEO_CUED: 5,
+};
+
+
 export type YouTubeNumericPlayerError = 2 | 5 | 100 | 101 | 150;
