@@ -9,18 +9,13 @@ import {
 import { BehaviorSubject, Subscription } from 'rxjs';
 import { v4 } from 'uuid';
 import {
-  YouTubeIFrameApi,
-  YouTubeConfig,
-  YouTubeNumericPlayerError,
-  YouTubeNumericPlayerState,
-  YouTubePlayer,
-  YouTubePlayerQualitySetting,
-  NumericBoolean,
   ISO6391TwoLetterLanguageCode,
-  YouTubePlayerColor,
-  YouTubePlayerIVLoadPolicy,
-  YouTubePlayerListType, YouTubePlayerManagerService, YouTubeIFrameApiService,
-} from '../../index';
+  NumericBoolean, YouTubeConfig, YouTubeIFrameApi,
+  YouTubeNumericPlayerError,
+  YouTubeNumericPlayerState, YouTubePlayer, YouTubePlayerColor, YouTubePlayerIVLoadPolicy, YouTubePlayerListType,
+  YouTubePlayerQualitySetting
+} from '../../interfaces/src/youtube-api';
+import {YouTubeIFrameApiService, YouTubePlayerManagerService} from "../../interfaces/src/services";
 
 const booleanToNumericBoolean = (
   inputBoolean: boolean | undefined
