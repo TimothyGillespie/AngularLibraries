@@ -5,7 +5,7 @@
       "projectType": "application",
       "root": "apps/showcase",
       "sourceRoot": "apps/showcase/src",
-      "prefix": "tgillespie",
+      "prefix": "g",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -141,7 +141,7 @@
       "projectType": "library",
       "root": "libs/youtube-player",
       "sourceRoot": "libs/youtube-player/src",
-      "prefix": "tgillespie",
+      "prefix": "g",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",

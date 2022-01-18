@@ -1,0 +1,26 @@
+<div class="text-center">
+<div>
+    <g-youtube-player
+      [height]="height"
+      [width]="width"
+      style="display: block;" videoId="M7lc1UVf-VE"
+      #youtubePlayer
+    ></g-youtube-player>
+</div>
+
+  <div class="mt-5">
+    <button mat-fab color="primary" aria-label="Play Video" (click)="togglePlayingState()">
+      <mat-icon *ngIf="!isPlaying">play_arrow</mat-icon>
+      <mat-icon *ngIf="isPlaying">pause</mat-icon>
+    </button>
+    <mat-slider min="0" max="100" step="1" [thumbLabel]="true" (input)="setValue($event)"></mat-slider>
+    <mat-form-field appearance="fill">
+      <mat-label>Width</mat-label>
+      <input matInput [(ngModel)]="width" value="640">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Height</mat-label>
+      <input matInput [(ngModel)]="height" value="390">
+    </mat-form-field>
+  </div>
+</div>

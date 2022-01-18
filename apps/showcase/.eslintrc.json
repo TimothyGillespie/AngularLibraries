@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "tgillespie",
+            "prefix": "g",
             "style": "kebab-case"
           }
         ]
