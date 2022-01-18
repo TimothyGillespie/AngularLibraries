@@ -15,9 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tgillespie/youtube-player": [
-        "libs/youtube-player/src/public_api.ts"
-      ]
+      "@tgillespie/youtube-player": ["libs/youtube-player/src/public_api.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
