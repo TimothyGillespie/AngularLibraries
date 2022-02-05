@@ -9,4 +9,8 @@ A component for embedding the YouTube Player and controlling it via the [YouTube
 
 It makes the iFrame API and player instance available via services and the component attribute. Alternatively, the API and Player instances can be managed with custom services.
 
-Demo and npm package are coming soon.
+It pretty much passes on the iFrame API, provides observables instead of events and adjusts the players for most changes even if the iFrame API would not usually react to the change.
+
+[See here for more](libs/youtube-player)
+[See here for a shallow Demo](https://timothygillespie.github.io/AngularLibraries/
+)
