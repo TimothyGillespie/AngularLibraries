@@ -1,6 +1,11 @@
 {
   "name": "@tgillespie/ngx-youtube-player",
   "version": "13.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TimothyGillespie/AngularLibraries.git",
+    "directory": "libs/youtube-player"
+  },
   "peerDependencies": {
     "@angular/common": "^13.0.0",
     "@angular/core": "^13.0.0"
