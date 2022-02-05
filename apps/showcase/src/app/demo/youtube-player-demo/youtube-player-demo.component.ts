@@ -2,14 +2,13 @@ import {AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild} from '@a
 import {YouTubePlayerComponent, YouTubePlayerState} from "@tgillespie/youtube-player";
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {MatSliderChange} from "@angular/material/slider";
-import {pairwise} from "rxjs";
 
 @Component({
   selector: 'g-youtube-player-demo',
   templateUrl: './youtube-player-demo.component.html',
   styleUrls: ['./youtube-player-demo.component.scss'],
 })
-export class YouTubePlayerDemoComponent implements OnInit, AfterViewInit {
+export class YouTubePlayerDemoComponent implements AfterViewInit {
   @ViewChild('youtubePlayer') youtubePlayer!: YouTubePlayerComponent;
 
 
@@ -26,13 +25,6 @@ export class YouTubePlayerDemoComponent implements OnInit, AfterViewInit {
     this.formGroup = this.fb.group({
       width: this.fb.control(640),
       height: this.fb.control(390),
-    });
-  }
-
-
-
-  ngOnInit() {
-    this.formGroup.valueChanges.subscribe(([prev, next]) => {
     });
   }
 
