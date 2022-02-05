@@ -8,7 +8,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "publish:gh-pages:showcase": "ng build showcase --prod --base-href \"https://timothygillespie.github.io/AngularLibraries/\" && npx angular-cli-ghpages --dir=dist/apps/showcase"
+    "publish:gh-pages:showcase": "nx build showcase --configuration=production --base-href \"https://timothygillespie.github.io/AngularLibraries/\" && npx angular-cli-ghpages --dir=dist/apps/showcase",
+    "publish:npm:youtube-player": "nx build youtube-player --configuration=production && npm publish --access public ./dist/libs/youtube-player"
   },
   "private": true,
   "dependencies": {
