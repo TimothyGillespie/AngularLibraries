@@ -20,7 +20,6 @@
             "tsConfig": "apps/showcase/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "apps/showcase/src/favicon.ico",
               "apps/showcase/src/assets"
             ],
             "styles": [
