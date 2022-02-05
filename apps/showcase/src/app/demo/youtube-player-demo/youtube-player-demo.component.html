@@ -1,26 +1,38 @@
-<div class="text-center">
-<div>
-    <g-youtube-player
-      [height]="height"
-      [width]="width"
-      style="display: block;" videoId="M7lc1UVf-VE"
-      #youtubePlayer
-    ></g-youtube-player>
-</div>
+<div class="text-center mt-8">
+  <div>
+      <g-youtube-player
+        [height]="height"
+        [width]="width"
+        style="display: block;" videoId="M7lc1UVf-VE"
+        #youtubePlayer
+      ></g-youtube-player>
+  </div>
 
-  <div class="mt-5">
-    <button mat-fab color="primary" aria-label="Play Video" (click)="togglePlayingState()">
-      <mat-icon *ngIf="!isPlaying">play_arrow</mat-icon>
-      <mat-icon *ngIf="isPlaying">pause</mat-icon>
-    </button>
-    <mat-slider min="0" max="100" step="1" [thumbLabel]="true" (input)="setValue($event)"></mat-slider>
-    <mat-form-field appearance="fill">
-      <mat-label>Width</mat-label>
-      <input matInput [(ngModel)]="width" value="640">
-    </mat-form-field>
-    <mat-form-field appearance="fill">
-      <mat-label>Height</mat-label>
-      <input matInput [(ngModel)]="height" value="390">
-    </mat-form-field>
+  <div class="mt-8">
+    <div>
+      <button mat-fab color="primary" aria-label="Play Video" (click)="togglePlayingState()">
+        <mat-icon *ngIf="!isPlaying">play_arrow</mat-icon>
+        <mat-icon *ngIf="isPlaying">pause</mat-icon>
+      </button>
+    </div>
+    <div class="mt-5">
+      <mat-form-field appearance="fill">
+        <mat-label>Width</mat-label>
+        <input matInput [(ngModel)]="width" value="640">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="ml-5">
+        <mat-label>Height</mat-label>
+        <input matInput [(ngModel)]="height" value="390">
+      </mat-form-field>
+    </div>
+    <div class="mt-3">
+      <mat-slider
+        [style.width.px]="width"
+        min="0" max="100" step="1"
+        [thumbLabel]="true"
+        (input)="setValue($event)"
+      ></mat-slider>
+    </div>
   </div>
 </div>
