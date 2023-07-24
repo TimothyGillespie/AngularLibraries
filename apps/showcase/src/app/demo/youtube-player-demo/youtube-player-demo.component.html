@@ -1,6 +1,8 @@
 <div class="text-center mt-8">
   <div>
       <g-youtube-player
+        (stateChange)="logEvent('StateChange', $event)"
+        (playbackRateChange)="logEvent('playbackRateChange', $event)"
         [height]="height"
         [width]="width"
         style="display: block;" videoId="M7lc1UVf-VE"

@@ -34,6 +34,11 @@ export class YouTubePlayerDemoComponent implements AfterViewInit {
       this.isPlaying = newState !== YouTubePlayerState.PAUSED;
 
       this.cd.detectChanges();
+      setInterval(() => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        console.log('Current Timestamp:', this.youtubePlayer.player?.getCurrentTime());
+      }, 100)
     });
 
   }
@@ -50,5 +55,9 @@ export class YouTubePlayerDemoComponent implements AfterViewInit {
   // when binding it to input and not to change
   setValue($event: MatSliderChange) {
     this.youtubePlayer?.player?.setVolume($event.value ?? 0);
+  }
+
+  logEvent(eventName: string, $event: any, ) {
+    console.log(`Event ${eventName}:`, $event);
   }
 }
